@@ -62,13 +62,16 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "port": 4654
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "starter-ng-storybook:build:production"
+              "buildTarget": "starter-ng-storybook:build:production"
             },
             "development": {
-              "browserTarget": "starter-ng-storybook:build:development"
+              "buildTarget": "starter-ng-storybook:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "starter-ng-storybook:build"
+            "buildTarget": "starter-ng-storybook:build"
           }
         },
         "test": {
