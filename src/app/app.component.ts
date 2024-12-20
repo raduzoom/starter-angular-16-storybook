@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'starter-ng-storybook';
+  menuItems = [
+    { path: '/page-upload', label: 'Upload' },
+  ];
 }

@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('node:path');
 const { safeStringify } = require('./util/server.util');
 
-const PORT_MOCK_SERVER = 3051;
+const PORT_MOCK_SERVER = 3725;
 const MEMORY_LIMIT = 10_000_000;
 const isMockUpload = true;
 
